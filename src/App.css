@@ -35,6 +35,18 @@
         font-weight: bold;
 }
 
+@media (max-width: 768px) {
+	.nav_links a {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.nav_links a {
+		font-size: 10px;
+	}
+}
+
 /* CSS for all sections */
 .section_header {
 	display: flex;
@@ -77,9 +89,10 @@
 
 /* CSS for home section */
 #home {
-	height: 450px;
+	height: auto;
 	margin: auto;
-	padding: 250px;
+	box-sizing: border-box;
+	padding: 5% 2%;
 }
 
 .name_text {
@@ -93,8 +106,7 @@
 
 @media (max-width: 768px) {
 	#home {
-		height: 350px;
-		padding: 100px;
+		padding: 7% 4%;
 	}
 	.name_text {
         	font-size: 70px;
@@ -103,19 +115,18 @@
 
 @media (max-width: 480px) {
 	#home {
-		height: 250px;
-		padding: 50px;
+		padding: 10% 6%;
 	}
 	.name_text {
         	font-size: 40px;
 	}
 }
 
-
 /* CSS for about section */
 #about {
-	height: 400px;
-	padding: 100px;
+	height: auto;
+	padding: 5% 2%;
+	box-sizing: border-box;
 }
 
 .resume_button_container {
@@ -124,9 +135,11 @@
 }
 
 .resume_button {
-	height: 25px;
-	width: 200px;
+	height: auto;
+	width: auto;
+	max-width: 200px;
  	box-shadow: 5px 5px 5px darkcyan;
+	box-sizing: border-box;
         color: black;
         border: 2px solid white;
         border-radius: 4px;
@@ -144,42 +157,38 @@
 
 @media (max-width: 768px) {
 	#about {
-		height: 350px;
-		padding: 100px;
+		padding: 5% 6%;
 	}
 	.resume_button {
         	font-size: 20px;
-		height: 20px;
-		width: 160px;
+		max-width: 180px;
 	}
 }
 
 @media (max-width: 480px) {
 	#about {
-		height: 250px;
-		padding: 50px;
+		padding: 5% 6%;
 	}
 	.resume_button {
         	font-size: 16px;
-		height: 15px;
-		width: 120px;
+		max-width: 160px;
 	}
 }
 
-
-
 /* CSS for skills section */
 #skills {
-	height: 400px;
-	padding: 100px;
+	height: auto;
+	margin: auto;
+	padding: 5% 2%;
+	box-sizing: border-box;
 }
 
 .skills_container {
 	display: grid;
-	gap: 25px;
-	grid-template-columns: 200px 200px 200px 200px 200px;
-	justify-content: space-evenly;
-	align-content: space-evenly;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	justify-content: center;
+	align-content: center;
 	box-sizing: border-box;
 }
 
@@ -192,7 +201,7 @@
 	border-radius: 4px;
 	font-family: 'Courier New';
 	font-size: 25px;
-	padding: 5px;
+	padding: 10px;
 	text-align: center;
 }
 
@@ -201,12 +210,8 @@
 }
 
 @media (max-width: 768px) {
-	#skills {
-		height: 350px;
-		padding: 100px;
-	}
 	.skills_container {
-		grid-template-columns: 100px 100px 100px 100px 100px;
+		gap: 15px;
 	}
 	.skills_item {
         	font-size: 20px;
@@ -214,12 +219,8 @@
 }
 
 @media (max-width: 480px) {
-	#skills {
-		height: 250px;
-		padding: 50px;
-	}
 	.skills_container {
-		grid-template-columns: 75px 75px 75px 75px 75px;
+		gap: 10px;
 	}
 	.skills_item {
         	font-size: 15px;
@@ -228,41 +229,48 @@
 
 /* CSS for projects section */
 #projects {
-	height: 400px; /* Increase as more projects get added */
-	padding: 100px;
+	height: auto; /* Increase as more projects get added */
+	margin: auto;
+	padding: 5% 2%;
 }
 
 .projects_container {
-	display: block;
-	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 25px
 }
 
 .projects_item {
         display: flex;
         align-items: center;
-	margin: 25px;
+	margin: 10px;
         padding: 20px;
 	border: 2px solid white;
 	border-radius: 4px;
 	box-shadow: 5px 5px 5px darkcyan;
 	box-sizing: border-box;
+	flex-direction: column;
+	max-width: 100%;
 }
 
 .project_box {
 	display: flex;
-	height: 225px;
-	width: 500px;
+	height: auto;
+	width: 100%;
+	max-width: 400px;
 	box-shadow: 5px 5px 5px darkcyan;
         box-sizing: border-box;
         border: 2px solid white;
         border-radius: 4px;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;	
 }
 
 .project_text_container {
-	text-align: left;
-	margin: 0px 30px;
+	text-align: center;
+	margin: 10px;
 }
 
 .project_title {
@@ -283,17 +291,13 @@
 
 @media (max-width: 768px) {
 	#projects {
-		height: 350px;
-		padding: 100px;
+		padding: 5% 2%;
+	}
+	.project_item {
+		margin: 10px;
 	}
 	.project_box {
-		height: auto;
 		width: 100%;
-		flex-direction: column;
-	}
-	.project_text_container {
-		text-align: center;
-        	margin: 10px 0;
 	}
 	.project_title {
 		font-size: 20px;
@@ -305,17 +309,13 @@
 
 @media (max-width: 480px) {
 	#projects {
-		height: 250px;
-		padding: 50px;
+		padding: 5% 2%;
+	}
+	.project_item {
+		margin: 5px;
 	}
 	.project_box {
-		height: auto;
 		width: 100%;
-		flex-direction: column;
-	}
-	.project_text_container {
-		text-align: center;
-        	margin: 10px 0;
 	}
 	.project_title {
 		font-size: 15px;
@@ -327,19 +327,21 @@
 
 /* CSS for contact section */
 #contact {
-	height: 350px;
-	padding: 100px;
+	height: auto;
+	margin: auto;
+	padding: 5% 2%;
+	box-sizing: border-box;
 }
 
 .contact_container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 .contact_item {
 	display: flex;
 	align-items: center;
-	margin: 0px 30px;
+	margin: 15px;
 }
 
 .contact_link {
@@ -365,7 +367,7 @@
 	overflow: hidden;
 	align-items: center;
 	justify-content: center;
-	margin-right: 20px;
+	margin-right: 15px;
 	border: 1px solid white;
 }
 
@@ -376,47 +378,29 @@
 
 @media (max-width: 768px) {
 	#contact {
-		height: 250px;
-		padding: 75px;
+		padding: 5% 4%;
 	}
-	.contact_item {
-		margin: 20px 0px;
-	}
-
 	.contact_link {
 		font-size: 20px;
-
+		margin-right: 15px;
 	}
 	.contact_logo_circle {
 		height: 50px;
 		width: 50px
 	}
-	.contact_logo {
-		height: 40%;
-	}
 }
 
 @media (max-width: 480px) {
 	#contact {
-		height: 200px;
-		padding: 50px;
-	}
-	.contact_container {
-		align-items: center;
-		flex-direction: column;
-	}
-	.contact_item {
-		margin: 15px 0px;
+		padding: 5% 6%;
 	}
 	.contact_link {
 		font-size: 15px;
+		margin-right: 10px;
 
 	}
 	.contact_logo_circle {
 		height: 40px;
 		width: 40px
-	}
-	.contact_logo {
-		height: 30%;
 	}
 }
