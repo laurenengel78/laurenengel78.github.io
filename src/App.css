@@ -57,9 +57,27 @@
         font-size: 20px;
 }
 
+@media (max-width: 768px) {
+	.section_header {
+        	font-size: 24px;
+	}
+	.section_body {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 480px) {
+	.section_header {
+        	font-size: 20px;
+	}
+	.section_body {
+		font-size: 16px;
+	}
+}
+
 /* CSS for home section */
 #home {
-	height: 400px;
+	height: 450px;
 	margin: auto;
 	padding: 250px;
 }
@@ -72,6 +90,27 @@
         font-family: 'Courier New';
         font-size: 100px;	
 }
+
+@media (max-width: 768px) {
+	#home {
+		height: 350px;
+		padding: 100px;
+	}
+	.name_text {
+        	font-size: 70px;
+	}
+}
+
+@media (max-width: 480px) {
+	#home {
+		height: 250px;
+		padding: 50px;
+	}
+	.name_text {
+        	font-size: 40px;
+	}
+}
+
 
 /* CSS for about section */
 #about {
@@ -102,6 +141,32 @@
 .resume_button:hover {
 	transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+	#about {
+		height: 350px;
+		padding: 100px;
+	}
+	.resume_button {
+        	font-size: 20px;
+		height: 20px;
+		width: 160px;
+	}
+}
+
+@media (max-width: 480px) {
+	#about {
+		height: 250px;
+		padding: 50px;
+	}
+	.resume_button {
+        	font-size: 16px;
+		height: 15px;
+		width: 120px;
+	}
+}
+
+
 
 /* CSS for skills section */
 #skills {
@@ -135,6 +200,32 @@
 	transform: scale(1.1);
 }
 
+@media (max-width: 768px) {
+	#skills {
+		height: 350px;
+		padding: 100px;
+	}
+	.skills_container {
+		grid-template-columns: 100px 100px 100px 100px 100px;
+	}
+	.skills_item {
+        	font-size: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	#skills {
+		height: 250px;
+		padding: 50px;
+	}
+	.skills_container {
+		grid-template-columns: 75px 75px 75px 75px 75px;
+	}
+	.skills_item {
+        	font-size: 15px;
+	}
+}
+
 /* CSS for projects section */
 #projects {
 	height: 400px; /* Increase as more projects get added */
@@ -156,11 +247,6 @@
 	box-shadow: 5px 5px 5px darkcyan;
 	box-sizing: border-box;
 }
-
-/*
-.projects_item:hover {
-	transform: scale(1.1);
-}*/
 
 .project_box {
 	display: flex;
@@ -195,6 +281,50 @@
         font-size: 20px;
 }
 
+@media (max-width: 768px) {
+	#projects {
+		height: 350px;
+		padding: 100px;
+	}
+	.project_box {
+		height: auto;
+		width: 100%;
+		flex-direction: column;
+	}
+	.project_text_container {
+		text-align: center
+        	margin: 10px 0;
+	}
+	.project_title {
+		font-size: 20px;
+	}
+	.project_description {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	#projects {
+		height: 250px;
+		padding: 50px;
+	}
+	.project_box {
+		height: auto;
+		width: 100%;
+		flex-direction: column;
+	}
+	.project_text_container {
+		text-align: center
+        	margin: 10px 0;
+	}
+	.project_title {
+		font-size: 15px;
+	}
+	.project_description {
+		font-size: 12px;
+	}
+}
+
 /* CSS for contact section */
 #contact {
 	height: 350px;
@@ -204,11 +334,13 @@
 .contact_container {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .contact_item {
 	display: flex;
 	align-items: center;
 	margin: 0px 30px;
+	flex: 1 1 300px;
 }
 
 .contact_link {
@@ -218,6 +350,7 @@
 	font-family: 'Courier New';
 	font-size: 25px;
 	margin-right: 15px;
+	transition: font-weight 0.2s;
 }
 
 .contact_link:hover {
@@ -240,4 +373,51 @@
 .contact_logo {
 	height: 60%;
 	width: auto;
+}
+
+@media (max-width: 768px) {
+	#contact {
+		height: 250px;
+		padding: 75px;
+	}
+	.contact_item {
+		margin: 20px 0px;
+	}
+
+	.contact_link {
+		font-size: 20px;
+
+	}
+	.contact_logo_circle {
+		height: 50px;
+		width: 50px
+	}
+	.contact_logo {
+		height: 40%;
+	}
+}
+
+@media (max-width: 480px) {
+	#contact {
+		height: 200px;
+		padding: 50px;
+	}
+	.contact_container {
+		align-items: center;
+		flex-direction: column;
+	}
+	.contact_item {
+		margin: 15px 0px;
+	}
+	.contact_link {
+		font-size: 15px;
+
+	}
+	.contact_logo_circle {
+		height: 40px;
+		width: 40px
+	}
+	.contact_logo {
+		height: 30%;
+	}
 }
