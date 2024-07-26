@@ -292,7 +292,7 @@
 		flex-direction: column;
 	}
 	.project_text_container {
-		text-align: center
+		text-align: center;
         	margin: 10px 0;
 	}
 	.project_title {
@@ -314,7 +314,7 @@
 		flex-direction: column;
 	}
 	.project_text_container {
-		text-align: center
+		text-align: center;
         	margin: 10px 0;
 	}
 	.project_title {
@@ -340,7 +340,6 @@
 	display: flex;
 	align-items: center;
 	margin: 0px 30px;
-	flex: 1 1 300px;
 }
 
 .contact_link {
