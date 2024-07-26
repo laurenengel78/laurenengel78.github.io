@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.1a58e299.css",
+    "main.css": "/static/css/main.9bb69ad5.css",
     "main.js": "/static/js/main.5c2ba657.js",
     "static/js/453.253ccfac.chunk.js": "/static/js/453.253ccfac.chunk.js",
     "static/media/cookailogo.png": "/static/media/cookailogo.1aee2825859b7c5ec985.png",
     "index.html": "/index.html",
-    "main.1a58e299.css.map": "/static/css/main.1a58e299.css.map",
+    "main.9bb69ad5.css.map": "/static/css/main.9bb69ad5.css.map",
     "main.5c2ba657.js.map": "/static/js/main.5c2ba657.js.map",
     "453.253ccfac.chunk.js.map": "/static/js/453.253ccfac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a58e299.css",
+    "static/css/main.9bb69ad5.css",
     "static/js/main.5c2ba657.js"
   ]
 }
