@@ -23,10 +23,12 @@ function ListSkills({ skills }) {
 const Skills = () => {
 	return (
 		<div>
+			<section id="skills">
+
  			<div className="section_header">Skills</div>
 
-			<section id="skills">
-				<ListSkills skills={skill_list} />
+			<ListSkills skills={skill_list} />
+
 			</section>
 		</div>
 	)

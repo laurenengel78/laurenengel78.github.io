@@ -10,9 +10,11 @@ const Contact = () => {
 	return (
 		<div>
 
-		<div className="section_header">Contact</div>
-
 		<section id="contact">
+
+			<div className="section_header">Contact</div>
+
+			<div className="contact_container">
 
 			<div className="contact_item">
 				<div className="contact_logo_circle">
@@ -40,6 +42,7 @@ const Contact = () => {
 				</a>
 			</div>
 
+			</div>
 
 		</section>
 

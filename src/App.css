@@ -27,7 +27,7 @@
         color: white;
         text-decoration: none;
         font-family: 'Courier New';
-        font-size: 40px;
+        font-size: 20px;
         font-weight: normal;
 }
 
@@ -40,10 +40,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 15px;
         color: black;
         text-decoration: none;
         font-family: 'Courier New';
-        font-size: 50px;
+        font-size: 30px;
         font-weight: bold;
 }
 
@@ -53,19 +54,65 @@
 	justify-content: center;
 	color: black;
         font-family: 'Courier New';
-        font-size: 40px;	
+        font-size: 20px;
+}
+
+/* CSS for home section */
+#home {
+	height: 400px;
+	margin: auto;
+	padding: 250px;
+}
+
+.name_text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
+        font-family: 'Courier New';
+        font-size: 100px;	
+}
+
+/* CSS for about section */
+#about {
+	height: 400px;
+	padding: 100px;
+}
+
+.resume_button_container {
+	display: flex;
+	justify-content: center;
+}
+
+.resume_button {
+	height: 25px;
+	width: 200px;
+ 	box-shadow: 5px 5px 5px darkcyan;
+        color: black;
+        border: 2px solid white;
+        border-radius: 4px;
+        font-family: 'Courier New';
+        font-size: 25px;
+	margin-top: 20px;
+        padding: 5px;
+        text-align: center;
+	text-decoration: none;
+}
+
+.resume_button:hover {
+	transform: scale(1.1);
 }
 
 /* CSS for skills section */
 #skills {
+	height: 400px;
 	padding: 100px;
 }
 
 .skills_container {
 	display: grid;
-	gap: 50px;
-/*	grid-template-columns: repeat(5, 1fr);*/
-	grid-template-columns: 350px 350px 350px 350px 350px;
+	gap: 25px;
+	grid-template-columns: 200px 200px 200px 200px 200px;
 	justify-content: space-evenly;
 	align-content: space-evenly;
 	box-sizing: border-box;
@@ -79,7 +126,7 @@
 	border: 2px solid white;
 	border-radius: 4px;
 	font-family: 'Courier New';
-	font-size: 45px;
+	font-size: 25px;
 	padding: 5px;
 	text-align: center;
 }
@@ -90,16 +137,23 @@
 
 /* CSS for projects section */
 #projects {
+	height: 400px; /* Increase as more projects get added */
 	padding: 100px;
+}
+
+.projects_container {
+	display: block;
+	align-items: center;
 }
 
 .projects_item {
         display: flex;
         align-items: center;
-	margin: 50px;
+	margin: 25px;
         padding: 20px;
 	border: 2px solid white;
 	border-radius: 4px;
+	box-shadow: 5px 5px 5px darkcyan;
 	box-sizing: border-box;
 }
 
@@ -110,8 +164,8 @@
 
 .project_box {
 	display: flex;
-	height: 500px;
-	width: 1000px;
+	height: 225px;
+	width: 500px;
 	box-shadow: 5px 5px 5px darkcyan;
         box-sizing: border-box;
         border: 2px solid white;
@@ -129,7 +183,7 @@
 	color: black;
         text-decoration: none;
         font-family: 'Courier New';
-        font-size: 50px;
+        font-size: 25px;
         font-weight: bold;
 	margin-bottom: 20px;
 }
@@ -138,16 +192,19 @@
 	color: black;
         text-decoration: none;
         font-family: 'Courier New';
-        font-size: 40px;
+        font-size: 20px;
 }
 
 /* CSS for contact section */
 #contact {
-	display: flex;
-	justify-content: space-around;
+	height: 350px;
 	padding: 100px;
 }
 
+.contact_container {
+	display: flex;
+	justify-content: space-around;
+}
 .contact_item {
 	display: flex;
 	align-items: center;
@@ -159,7 +216,7 @@
 	align-items: center;
 	color: black;
 	font-family: 'Courier New';
-	font-size: 45px;
+	font-size: 25px;
 	margin-right: 15px;
 }
 
@@ -168,8 +225,8 @@
 }
 
 .contact_logo_circle {
-	height: 100px;
-	width: 100px;
+	height: 75px;
+	width: 75px;
 	border-radius: 50%;
 	background-color: black;
 	display: flex;
@@ -177,7 +234,7 @@
 	align-items: center;
 	justify-content: center;
 	margin-right: 20px;
-	border: 1px solid green;
+	border: 1px solid white;
 }
 
 .contact_logo {

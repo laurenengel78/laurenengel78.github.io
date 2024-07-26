@@ -15,6 +15,7 @@ const Navigation = () => {
 	return (
 		<nav className="nav_bar">
 			<div className="nav_links">
+				<a href="#home" onClick={(e) => handleScroll(e, 'home')}>Home</a>
 				<a href="#about" onClick={(e) => handleScroll(e, 'about')}>About</a>
 				<a href="#skills" onClick={(e) => handleScroll(e, 'skills')}>Skills</a>
 				<a href="#projects" onClick={(e) => handleScroll(e, 'projects')}>Projects</a>
