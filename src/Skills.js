@@ -1,10 +1,9 @@
 import React from 'react';
+import { Fade } from 'react-awesome-reveal';
 import './App.css';
 
-//import javaImage from './images/java.png';
-
 export const skill_list = [
-	'Java', 'JavaScript', 'Python','Linux', 'C', 'C++', 'Git', 'OCaml', 'SQL', 'OpenAI', 'Flask', 'HTML', 'CSS', 'ReactJS', 'React Native'
+	'Java', 'JavaScript', 'Python','Linux', 'C', 'C++', 'Git', 'OCaml', 'Prolog', 'SQL', 'OpenAI', 'Flask', 'Firebase', 'HTML', 'CSS', 'Next.js', 'React.js', 'React Native', 'Material UI'
 ];
 
 function ListSkills({ skills }) {
@@ -23,13 +22,12 @@ function ListSkills({ skills }) {
 const Skills = () => {
 	return (
 		<div>
-			<section id="skills">
-
- 			<div className="section_header">Skills</div>
-
-			<ListSkills skills={skill_list} />
-
-			</section>
+			<Fade delay={300} duration={1500} triggerOnce>
+				<section id="skills">
+ 					<div className="section_header">Skills</div>
+					<ListSkills skills={skill_list} />
+				</section>
+			</Fade>
 		</div>
 	)
 };
