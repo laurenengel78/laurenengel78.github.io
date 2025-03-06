@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.b7b96cd2.css",
-    "main.js": "/static/js/main.2e6ff5ae.js",
-    "static/js/488.3f61d150.chunk.js": "/static/js/488.3f61d150.chunk.js",
+    "main.js": "/static/js/main.4c54c03e.js",
+    "static/js/488.d07c9134.chunk.js": "/static/js/488.d07c9134.chunk.js",
     "static/media/cookailogo.png": "/static/media/cookailogo.12e30ea86d1a772fce09.png",
+    "static/media/datafoxlogo.png": "/static/media/datafoxlogo.374105d48debb9c6adcc.png",
     "index.html": "/index.html",
     "main.b7b96cd2.css.map": "/static/css/main.b7b96cd2.css.map",
-    "main.2e6ff5ae.js.map": "/static/js/main.2e6ff5ae.js.map",
-    "488.3f61d150.chunk.js.map": "/static/js/488.3f61d150.chunk.js.map"
+    "main.4c54c03e.js.map": "/static/js/main.4c54c03e.js.map",
+    "488.d07c9134.chunk.js.map": "/static/js/488.d07c9134.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b7b96cd2.css",
-    "static/js/main.2e6ff5ae.js"
+    "static/js/main.4c54c03e.js"
   ]
 }
