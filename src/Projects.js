@@ -28,7 +28,9 @@ const Projects = () => {
 										<br />
 									</div>
 							</div>
+						</div>
 
+						<div className="projects_item">
 							<div className="project_logo">
 								<img src={DataFoxLogo} alt="DATA_Fox"/>
 							</div>
