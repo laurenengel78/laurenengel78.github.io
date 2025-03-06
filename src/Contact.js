@@ -21,7 +21,7 @@ const Contact = () => {
 								<AiFillLinkedin className="contact_logo"/>
 							</div>
 
-							<a href="https://www.linkedin.com/in/lauren-engel-3311b32b2/" target="_blank" rel="noopener noreferrer">
+							<a href="https://www.linkedin.com/in/laurenengel/" target="_blank" rel="noopener noreferrer">
 								<div className="contact_link">LinkedIn</div>
 							</a>
 						</div>

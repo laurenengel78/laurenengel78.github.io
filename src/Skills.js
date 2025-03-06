@@ -3,7 +3,7 @@ import { Fade } from 'react-awesome-reveal';
 import './App.css';
 
 export const skill_list = [
-	'Java', 'JavaScript', 'Python','Linux', 'C', 'C++', 'Git', 'OCaml', 'Prolog', 'SQL', 'OpenAI', 'Flask', 'Firebase', 'HTML', 'CSS', 'Next.js', 'React.js', 'React Native', 'Material UI'
+	'Java', 'JavaScript', 'Python','Linux', 'C', 'C++', 'Git', 'OCaml', 'Prolog', 'SQL', 'OpenAI', 'AWS', 'Flask', 'Firebase', 'HTML', 'CSS', 'Material UI', 'Next.js', 'React.js', 'React Native', 'Selenium'
 ];
 
 function ListSkills({ skills }) {
