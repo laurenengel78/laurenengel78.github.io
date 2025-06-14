@@ -38,11 +38,10 @@ const Projects = () => {
 							<div className="project_text_container">
 								<div className="project_title">DATA_Fox</div>
 									<div className="project_description">
-										DATA_Fox is an <strong> Flask </strong>and<strong> Selenium </strong>powered "phone book". <br />
+										DATA_Fox is an <strong> Flask </strong>and<strong> Playwright </strong>powered "phone book". <br />
 										Enter in information you already know about a person or company you want to research, <br />
 										and DATA_Fox will scrape the web to fill in the gaps. <br />
 										<br />
-										<strong>Full version coming in May 2025!</strong>
 									</div>
 							</div>
 						</div>
