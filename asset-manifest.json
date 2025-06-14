@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.6900b770.css",
-    "main.js": "/static/js/main.ef3e1160.js",
+    "main.js": "/static/js/main.27c1062c.js",
     "static/js/488.d07c9134.chunk.js": "/static/js/488.d07c9134.chunk.js",
     "static/media/cookailogo.png": "/static/media/cookailogo.12e30ea86d1a772fce09.png",
     "static/media/datafoxlogo.png": "/static/media/datafoxlogo.374105d48debb9c6adcc.png",
     "index.html": "/index.html",
     "main.6900b770.css.map": "/static/css/main.6900b770.css.map",
-    "main.ef3e1160.js.map": "/static/js/main.ef3e1160.js.map",
+    "main.27c1062c.js.map": "/static/js/main.27c1062c.js.map",
     "488.d07c9134.chunk.js.map": "/static/js/488.d07c9134.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6900b770.css",
-    "static/js/main.ef3e1160.js"
+    "static/js/main.27c1062c.js"
   ]
 }
